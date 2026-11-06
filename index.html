@@ -1,224 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lavishly+Yours&family=Mea+Culpa&family=Playwrite+BR+Guides&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="winkel/style.css">
-    <script src="script.js" defer></script>
-    <title>Elsa's Kapsalon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elsa's Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-    <div class="service-background" aria-hidden="true">
-        <div></div>
-        <div></div>
-    </div>
-    <header id = 'header'>
-        <nav id = 'homeNav'>
-            <button onclick="showPage('home')">Home</button>
-            <button onclick="showPage('about')">Over ons</button>
-            <button onclick="showPage('service')">Diensten</button>
-            <button onclick="showPage('shop')">Shop</button>
-            <button onclick="showPage('book')">Afspraak Maken</button>
-        </nav>
-    </header>
-    <section class = 'page active' id = 'home'>
-    <div class ='hero'>
-        <h1>Elsa's Kapsalon</h1>
-        <p><span id = 'description'>Premium service en een kapsel dat echt bij je past. Boek je afspraak vandaag nog.</span></p>
-        <button onclick ="showPage('book')" id = 'button1'>➡ Boek nu je afspraak</button>
-        <button onclick = "showPage('service')" id = 'button2'>➡ Bekijk onze diensten</button>
-    </div>
-    <div class = 'option-part'>
-        <div class = 'image-part1'>
-            <img src = 'images/saskappers-kapsalon.jpg' id = 'about-image1' alt = 'wie wij zijn'>
-        </div>
-        <div class = 'button-part1'>
-            <h2>Wie wij zijn</h2>
-            <p>Ons team van kapsters, stylisten en mode-specialisten zorgen voor een professioneel resultaat dat voldoet aan uw wensen. Sinds 1975 verzorgen wij de beste kapsels en zijn we zelfs uitgeroepen tot beste kapsalon van provincie Gelderland.</p>
-            <div id = 'newImage1'>
-            </div>
-            <button id = 'about-button' onclick="showPage('about')">Lees meer over ons</button>
-        </div>
-    </div>
-    <div class = 'option-part'>
-        <div class = 'image-part2'>
-            <img src = 'images/diensten-image.webp' id = 'about-image2' alt = 'Onze Diensten'>
-        </div>
-        <div class = 'button-part2'>
-            <h2>Onze diensten</h2>
-            <p>Van haar knippen tot volledige beauty behandeling. Wij kunnen het hier allemaal! Bekijk hier ons brede assortiment aan diensten met de bijbehorende prijzen. Ook kun je hier seizoensspecials vinden!</p>
-            <div id = 'newImage2'>
-            </div>
-            <button id = 'service-button' onclick="showPage('service')">Onze diensten</button>
-        </div>
-        <div class = 'images-part2'>
-        </div>
-    </div>
-    <div class = 'option-part'>
-        <div class = 'image-part3'>
-            <img src = 'images/kapperswinkel.jpg' id = 'about-image3' alt = 'Winkel'>
-        </div>
-        <div class = 'button-part3'>
-            <h2>Onze winkel</h2>
-            <p>Neem een kijkje in ons ruime assortiment aan producten. Van producten voor je haar zoals gel of shampoos tot body cremes en make-up. Je vindt hier alles wat je nodig hebt om er mooi uit te zien!</p>
-            <div id = 'newImage3'>
-            </div>
-            <button id = 'shop-button' onclick="showPage('shop')">Online winkel</button>
-        </div>
-    </div>
-    </section>
-    <section class = 'page' id = 'about'>
-    <h2>Wie wij zijn</h2>
-    <div id = 'special1'>
-    <p><span id = 'description-about'>Sinds 1975 verzorgen wij de mooiste kapsels. Maar dit alles is natuurlijk niet mogelijk zonder dit geweldige team. Wij geloven dat goede samenwerking tussen teamleden zorgt voor het beste resultaat. Daarnaast nemen wij alleen de beste en meest getalenteerde kapsters aan. Lees hier meer over elk teamlid.</span></p>
-    </div>
-    <div class = 'about-part'>
-    <div class = 'about-part1'>
-    <h3>Elsa: leidinggevene</h3>
-    <img src = 'images/elsa2.jpg' alt = 'Elsa (leidinggevende)' id = 'about-image'>
-    <p>Als leidinggevende ben ik verantwoordelijk dat de taken goed verdeeld worden. Ook ben ik actief bezig met uitbreiden van ons assortiment en het onderzoeken van de nieuwste beaty trends. Uiteraard ben ik zelf ook bezig als kapster.</p>
-    </div>
-    <div class = 'about-part2'>
-    <h3>Nienke: Kapster</h3>
-    <img src = 'images/Marieke.jpg' alt = 'Nienke (kapster)' id = 'about-image'>
-    <p>Mijn naam is Nienke. Als kapster vind ik het belangrijk om te luisteren naar de wensen van mijn klanten. Daarom vind ik duidelijke communicatie met de klant belangrijk. Samen onderzoeken we welk kapsel het best bij je past.</p>
-    </div>
-    </div>
-    <div class = 'about-part'>
-    <div class = 'about-part1'>
-    <h3>Zara: Kapster</h3>
-    <img src = 'images/zara.jpeg' alt = 'Zara (kapster)' id = 'about-image'>
-    <p>Een goed kapsel begint bij zorgvuldigheid. Als kapster ben ik daarom niet zomaar bezig met het knippen van haar, ik bewerk het op een zorgvuldige manier. Uiteraard is goede communicatie met de klant daarbij onmisbaar.</p>
-    </div>
-    <div class = 'about-part2'>
-    <h3>Nina: Beaty-specialist</h3>
-    <img src = 'images/nina.jpeg' alt = 'Nina (kapster)' id = 'about-image'>
-    <p>Als beaty specialist behandel ik alles wat nog mooier kan naast een mooi kapsel. Denk aan het verwijderen van huidhaar en behandeling van de huid. Ook kun je bij mij terecht voor gericht make-up advies of bij ander beaty-gerelateerd advies.</p>
-    </div>
-    </div>
-    <div class = 'about-part'>
-    <div class = 'about-part1'>
-    <h3>Bas: Eigenaar Winkel</h3>
-    <img src = 'images/bas.jpeg' alt = 'Bas (winkeleigenaar)' id = 'about-image'>
-    <p>Hallo! Mijn naam is bas. Ik ben eigenaar van de kapperswinkel. In mijn winkel verkoop ik niet alleen haar-gerelateerde producten maar ook allerlei andere andere beatyproducten. Neem gerust een kijkje!</p>
-    </div>
-    <div class = 'about-part2'>
-    <h3>Loes: Administrateur</h3>
-    <img src = 'images/loes.jpg' alt = 'Loes (administratie)' id = 'about-image'>
-    <p>Als administrateur zorg ik voor een naadloze samenwerking tussen het team. Zowel intern als extern. Ook ben ik verantwoordelijk voor de promotie van ons bedrijf. Daarnaast doe ik ook de financiele administratie. Een veelzijdige taak dus!</p>
-    </div>
-    </div>
-    </section>
-    <section class = 'page' id = 'service'>
-    <h2>Onze diensten</h2>
-    <div class = 'services'>
-    <div class = 'service1'>
-    <h3>Knippen mannen</h3>
-    <p><span class = 'price'>Duur: 20 minuten</span></p>
-    <p><span class = 'price'>Prijs: 30 euro</span></p>
-    <img src = 'images/knippen-mannen.avif' alt = 'knippen-mannen' id = 'service-image'>
-    <p>Bij Elsa's kapsalon zorgen we ervoor dat je haar er altijd op zijn best uitziet. Onze ervaren kappers staan klaar om je te helpen de perfecte look te bereiken.</p>
-    <button id = 'service-button1'>Boek deze behandeling</button>
-    </div>
-    <div class = 'service2'>
-    <h3>Knippen vrouwen</h3>
-    <p><span class = 'price'>Duur: 30 minuten</span></p>
-    <p><span class = 'price'>Prijs: 45 euro</span></p>
-    <img src = 'images/knippen-vrouwen.webp' alt = 'knippen-vrouwen' id = 'service-image'>
-    <p>Bij Elsa's kapsalon zorgen we ervoor dat je haar er altijd op zijn best uitziet. Onze ervaren kapsters staan klaar om je te helpen de perfecte look te bereiken.</p>
-    <button id = 'service-button2'>Boek deze behandeling</button>
-    </div>
-    <div class = 'service1'>
-    <h3>Haar verven</h3>
-    <p><span class = 'price'>Duur: 60 minuten</span></p>
-    <p><span class = 'price'>Prijs: 75 euro</span></p>
-    <img src = 'images/haar-verven.png' alt = 'haar-verven' id = 'service-image'>
-    <p>Je haar verven, Elsa's kapsalon is hier de perfecte plek voor! We gebruiken uitsluitend hoogwaardige verfproducten om je haar gezond en glanzend te houden.</p>
-    <button id = 'service-button3'>Boek deze behandeling</button>
-    </div>
-    <div class = 'service2'>
-    <h3>Anti-grijs behandeling</h3>
-    <p><span class = 'price'>Duur: 45 minuten</span></p>
-    <p><span class = 'price'>Prijs: 60 euro</span></p>    
-    <img src = 'images/haarbehandeling.webp' alt = 'anti-grijs-behandeling' id = 'service-image'>
-    <p>Elsa's antigrijs behandeling bestrijd grijze haren effectief en zorgt voor een natuurlijke haarkleur. We gebruiken uitsluitend natuurlijke producten.</p>
-    <button id = 'service-button4'>Boek deze behandeling</button>
-    </div>
-    </div>
-    </section>
-    <section class = 'page' id = 'shop'>
-      <!-- SHOP-VOORBEELDEN: bewerk deze drie kaarten los van de aparte winkelpagina. -->
-      <div class="store-preview">
-        <div class="store-shell">
-          <div class="store-preview-intro">
-            <p class="store-eyebrow">Elsa's Kapsalon / Shop</p>
-            <h2>Elsa's Kapsalon Shop</h2>
-            <p>Van luxe gels tot professionele haarverzorgingsproducten. We hebben het hier allemaal!</p>
-            <!-- Vervang dit adres later als de winkel een eigen domein krijgt. -->
-            <a class="store-button" href="winkel/index.html">Naar de online winkel</a>
-          </div>
-          <div class="store-product-grid">
-          <article class="store-product" aria-labelledby="shop-product-01-title">
-            <div class="store-product-image"><span><img src="images/shampoo.png" alt="Shampoo"></span></div>
-            <div class="store-product-info">
-              <h3 id="shop-product-01-title">Elsa's Shampoo</h3>
-              <p class="store-product-description">Elsa's luxe shampoo voor zorgvuldige haarverzorging.</p>
-              <div class="store-product-meta"><span>250 ml</span><span class="store-price">€16,95</span></div>
-              <a class="store-text-link" href="winkel/index.html#product-01">Bekijk in de winkel<span class="store-visually-hidden">: product 01</span></a>
-            </div>
-          </article>
+<body class="store-page">
+  <a class="store-skip-link" href="#collectie">Ga naar de producten</a>
 
-          <article class="store-product" aria-labelledby="shop-product-02-title">
-            <div class="store-product-image"><span><img src="images/gezichstcreme.png" alt="Conditioner"></span></div>
-            <div class="store-product-info">
-              <h3 id="shop-product-02-title">Elsa's Creme</h3>
-              <p class="store-product-description">Een luxe gezichtscreme. Gezond voor huid en haar.</p>
-              <div class="store-product-meta"><span>250 ml</span><span class="store-price">€19,95</span></div>
-              <a class="store-text-link" href="winkel/index.html#product-02">Bekijk in de winkel<span class="store-visually-hidden">: product 02</span></a>
-            </div>
-          </article>
+  <!-- HEADER: vervang [Winkelnaam]. Pas de teruglink aan bij een apart domein. -->
+  <header class="store-header">
+    <div class="store-shell store-header-inner">
+      <a class="store-brand" href="index.html">Elsa's Store</a>
+      <nav class="store-navigation" aria-label="Winkelnavigatie">
+        <a href="#collectie">Collectie</a>
+        <a href="../index.html">Terug naar kapsalon</a>
+      </nav>
+    </div>
+  </header>
 
-          <article class="store-product" aria-labelledby="shop-product-03-title">
-            <div class="store-product-image"><span><img src="images/stylinggel.png" alt="Styling Gel"></span></div>
-            <div class="store-product-info">
-              <h3 id="shop-product-03-title">Elsa's Styling Gel</h3>
-              <p class="store-product-description">Een krachtig stylinggel gemaakt van gezonde ingrediënten.</p>
-              <div class="store-product-meta"><span>250 ml</span><span class="store-price">€15,95</span></div>
-              <a class="store-text-link" href="winkel/index.html#product-03">Bekijk in de winkel<span class="store-visually-hidden">: product 03</span></a>
-            </div>
-          </article>
-          </div>
-        </div>
+  <main>
+    <!-- INTRODUCTIE: schrijf hier later je eigen titel en introductie. -->
+    <section class="store-intro store-shell" aria-labelledby="store-title">
+      <div>
+        <p class="store-eyebrow">Elsa's Kapsalon / Winkel</p>
+        <h1 id="store-title">Elsa's Store</h1>
+      </div>
+      <div class="store-intro-copy">
+        <p>Ons luxe assortiment van haarverzorgingsproducten. Wij gebruiken uitsluitend gezonde ingrediënten in onze producten. Kwaliteit staat bij ons voorop!</p>
+        <a class="store-text-link" href="#collectie">Bekijk de collectie</a>
       </div>
     </section>
-    <section class = 'page' id = 'book'>
-    <h2>Afspraak maken</h2>
-    <p>Boek hier je afspraak! Vaak zijn de tijden bezet, dus boek op tijd!</p>
-    <div class = 'book-part'>
-    <input type = 'text' placeholder = 'Naam' id = 'name'>
-    <input type = 'text' placeholder = 'Telefoonnummer' id = 'phone'>
-    <input type = 'text' placeholder = 'E-mail' id = 'email'>
-    <input type = 'text' placeholder = 'Datum (dd-mm-jjjj)' id = 'date'>
-    <input type = 'text' placeholder = '*Tijd (hh:mm)' id = 'time'>
-    <select id = 'service-select'>
-      <option value = 'service1' id = 'service-option1'>Knippen mannen</option>
-      <option value = 'service2' id = 'service-option2'>Knippen vrouwen</option>
-      <option value = 'service3' id = 'service-option3'>Haar verven</option>
-      <option value = 'service4' id = 'service-option4'>Anti-grijs behandeling</option>
-    </select>
-    <button id = 'book-button'>Boek Afspraak</button>
+
+    <!-- CATALOGUS: categorieën zijn gewone ankerlinks, geen JavaScript-filters. -->
+
+      <div class="store-catalog-content">
+        <section class="store-category" id="categorie-01" aria-labelledby="categorie-01-title">
+          <div class="store-product-grid">
+            <!-- Vervang de voorbeeldproducten hieronder door je eigen producten. Voeg hier later een productlink of koopknop toe. -->
+            <article class="store-product" id="product-01" aria-labelledby="product-01-title">
+              <div class="store-product-image"><span><img src="images/shampoo.png" alt="Elsa's Shampoo" loading="lazy"></span></div>
+              <div class="store-product-info">
+                <p class="store-product-brand">Elsa's products</p>
+                <h3 id="product-01-title">Elsa's Shampoo</h3>
+                <p class="store-product-description">Elsa's luxe shampoo voor zorgvuldige haarverzorging.</p>
+                <div class="store-product-meta"><span>250 ml</span><span class="store-price">€16,95</span></div>
+                <button id="buy-button1">Bestel</button>
+              </div>
+            </article>
+
+            <article class="store-product" id="product-02" aria-labelledby="product-02-title">
+              <div class="store-product-image"><span><img src="images/gezichstcreme.png" alt="Elsa's Creme" loading="lazy"></span></div>
+              <div class="store-product-info">
+                <p class="store-product-brand">Elsa's products</p>
+                <h3 id="product-02-title">Elsa's Creme</h3>
+                <p class="store-product-description">Een luxe gezichtscreme. Gezond voor huid en haar.</p>
+                <div class="store-product-meta"><span>50 ml</span><span class="store-price">€19,95</span></div>
+                <button id="buy-button2">Bestel</button>
+              </div>
+            </article>
+
+            <article class="store-product" id="product-03" aria-labelledby="product-03-title">
+              <div class="store-product-image"><span><img src="images/stylinggel.png" alt="Elsa's Styling Gel" loading="lazy"></span></div>
+              <div class="store-product-info">
+                <p class="store-product-brand">Elsa's products</p>
+                <h3 id="product-03-title">Elsa's Styling Gel</h3>
+                <p class="store-product-description">Een krachtige styling gel voor langdurige hold.</p>
+                <div class="store-product-meta"><span>100 ml</span><span class="store-price">€15,95</span></div>
+                <button id="buy-button3">Bestel</button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="store-category" id="categorie-02" aria-labelledby="categorie-02-title">
+          <div class="store-product-grid">
+            <article class="store-product" id="product-04" aria-labelledby="product-04-title">
+              <div class="store-product-image"><span><img src="images/haarolie.png" alt="Haarolie"></span></div>
+              <div class="store-product-info">
+                <p class="store-product-brand">Elsa's products</p>
+                <h3 id="product-04-title">Elsa's Haarolie</h3>
+                <p class="store-product-description">Voedt en versterkt het haar met natuurlijke oliën.</p>
+                <div class="store-product-meta"><span>50 ml</span><span class="store-price">€14,95</span></div>
+                <button id="buy-button4">Bestel</button>
+              </div>
+            </article>
+
+            <article class="store-product" id="product-05" aria-labelledby="product-05-title">
+              <div class="store-product-image"><span><img src="images/baardolie.png" alt="Baardolie"></span></div>
+              <div class="store-product-info">
+                <p class="store-product-brand">Elsa's products</p>
+                <h3 id="product-05-title">Elsa's Baardolie</h3>
+                <p class="store-product-description">Elsa's luxe baardolie voor zorgvuldige baardverzorging.</p>
+                <div class="store-product-meta"><span>250 ml</span><span class="store-price">€16,95</span></div>
+                <button id="buy-button5">Bestel</button>
+              </div>
+            </article>
+
+            <article class="store-product" id="product-06" aria-labelledby="product-06-title">
+              <div class="store-product-image"><span><img src="images/haarlak.png" alt="Haarlak"></span></div>
+              <div class="store-product-info">
+                <p class="store-product-brand">Elsa's products</p>
+                <h3 id="product-06-title">Elsa's Haarlak</h3>
+                <p class="store-product-description">Elsa's luxe haarlak voor goed verzorgd haar.</p>
+                <div class="store-product-meta"><span>250 ml</span><span class="store-price">€17,95</span></div>
+                <button id="buy-button6">Bestel</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
     </div>
-    </section>
-    <footer>
-        <h2>Contact</h2>
-        <p>*Openingsuren: Maandag - Vrijdag 9:00 - 19:00, Zaterdag 9:00 - 21:00, Zondag 9:00 - 17:00</p>
-        <p>Email: kapperelsa@gmail.com</p>
-        <p>Telefoonnummer: 0638244055</p>
-        <p>Locatie: Langebreedte straat, Nijmegen</p> 
-    </footer>
+  </main>
+
+  <!-- FOOTER: plaats hier later je eigen winkel- en contactinformatie. -->
+  <footer class="store-footer">
+    <div class="store-shell store-footer-inner">
+      <div><p class="store-brand">Elsa's Store</p><p>Een luxe winkel voor haarverzorging.</p></div>
+      <div><h2>Contact</h2><p>contact@elsasstore.nl</p><p>0638244055</p></div>
+      <a class="store-text-link" href="../index.html">Terug naar kapsalon</a>
+    </div>
+  </footer>
 </body>
 </html>
