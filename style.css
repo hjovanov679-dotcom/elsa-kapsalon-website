@@ -1,0 +1,691 @@
+header nav[hidden] {
+  display: none;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: white;
+	background-color: #1D1917;
+  text-align: center;
+}
+
+.page.active {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.newImage {
+  height: 0px;
+}
+
+#hero-image {
+  height: 750px;
+  width: 90%;
+  object-fit: cover;
+}
+
+.hero {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  background-image: linear-gradient(
+      90deg,
+      rgba(20, 17, 15, 0.62) 0%,
+      rgba(20, 17, 15, 0.38) 45%,
+      rgba(20, 17, 15, 0.15) 100%
+  ), url('images/mobiele-kapper.jpg');
+  background-size: cover;
+  height: 800px;
+}
+
+.hero #button1 {
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  margin-top: 70px;
+  margin-right: 970px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.hero #button2 {
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  margin-top: 40px;
+  margin-right: 960px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.hero #button1:hover {
+  color: lightgrey;
+}
+.hero #button2:hover {
+  color: lightgrey;
+}
+
+.option-part {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 600px;
+}
+
+.image-part1, .image-part3 {
+  grid-column: 1;
+}
+.button-part1, .button-part3 {
+  grid-column: 2;
+}
+.image-part2 {
+  grid-column: 2;
+}
+.button-part2 {
+  grid-column: 1;
+}
+
+.option-part img {
+  height: 500px;
+  width: 700px;
+  object-fit: cover;
+}
+
+#description {
+  font-size: 35px;
+  font-family: "Rouge Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero p {
+  width: 50%;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+h1 {
+	font-size: 75px;
+  margin-top: 0px;
+  padding-top: 50px;
+  padding-right: 520px;
+  position: relative;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  color: #FFF;
+}
+
+h2 {
+	font-size: 50px;
+}
+
+h3 {
+	font-size: 35px;
+}
+
+header nav p {
+	display: inline-block;
+	padding-left: 30px;
+}
+
+header {
+  background-color: #A58F7C;
+  height: 80px;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  padding: 10px;
+  margin-left: 0;
+  justify-content: center;
+}
+
+nav button {
+  color: white;
+  background-color: #A58F7C;
+  font-size: 28px;
+  text-decoration: none;
+  border: none;
+  font-weight: 500;
+  padding-top: 15px;
+  font-weight: 500;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+#about-image {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.button-part1 p {
+  font-size: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-part1 button {
+  border: 2px solid #C8AD7F;
+}
+
+.button-part1 button:hover, .button-part3 button:hover {
+  transform: scale(1.05);
+}
+
+.button-part2 button:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+.button-part3 button {
+  border: 2px solid #D8C9B8;
+}
+
+.button-part1 button, .button-part3 button {
+  margin-top: 65px;
+  font-size: 25px;
+  color: white;
+  background-color: #3A3735;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.button-part2 button {
+  position: absolute;
+  font-size: 25px;
+  background-color: rgb(62, 62, 62);
+  color: white;
+  border: 2px solid #B39A87;
+  padding: 10px;
+  border-radius: 2px;
+  top: 1830px;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.button-part2 h2 {
+  position: absolute;
+  top: 1540px;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.button-part2 p {
+  position: absolute;
+  top: 1660px;
+  width: 40%;
+  left: 25%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+.button-part3 p {
+  font-size: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-image {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+#description-about {
+  font-size: 20px;
+  font-weight: 450;
+}
+
+#special1 p {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+
+.about-part {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  margin-bottom: 30px;
+}
+
+.about-part1 {
+  grid-column: 1;
+}
+
+.about-part2 {
+  grid-column: 2;
+}
+
+.about-part1 p, .about-part2 p {
+  font-size: 18px;
+  width: 80%;
+  padding-left: 70px;
+}
+
+#service-image {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 550;
+}
+
+#service h2 {
+  background-color: #1D1917;
+  color: white;
+  padding: 12px 20px 10px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  height: 50px;
+}
+
+.service h3 {
+  font-size: 22px;
+  margin-bottom: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 0px;
+}
+
+.services p {
+  font-size: 20px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.service1 {
+  grid: 1;
+}
+.service2 {
+  grid: 2;
+}
+
+.service1, .service2 {
+  margin-bottom: 20px;
+}
+
+#service button {
+  font-size: 20px;
+  background-color: #A58F7C;
+  color: white;
+  border: grey 2px solid;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: transparent;
+  border: 2px solid #B59975;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+#service-button2, #service-button4 {
+  border: #B59975 2px solid !important;
+}
+
+footer {
+  background-color: #292320;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.book-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#book p {
+  font-size: 20px;
+  width: 80%;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+
+.book-part input {
+  width: 500px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid #B59975;
+  background-color: transparent;
+  color: white;
+}
+
+.book-part select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #B59975;
+  border-radius: 0px;
+  color: white;
+}
+
+#book-button {
+  width: 200px;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #A58F7C;
+  color: white;
+  border: grey 2px solid;
+  margin-bottom: 20px;
+}
+
+#service-select {
+  width: 522px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  *, *::before, *::after {
+      box-sizing: border-box;
+  }
+  * {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .hero {
+    height: 600px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: 70% center;
+  }
+  #description {
+    font-size: 22px;
+  }
+
+  h1 {
+    margin-left: 100px;
+    text-align: center;
+    font-size: 50px;
+    width: 100% !important;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  #button1, #button2 {
+    font-size: 20px !important;
+    width: 100% !important;
+  }
+  .option-part {
+    display: block;
+    height: auto;
+  }
+
+  .button-part1 button, .button-part2 button, .button-part3 button {
+    display: block !important;
+    position: static !important;
+    transform: none;
+  }
+  .button-part1 p, .button-part3 p {
+    display: block !important;
+    position: relative !important;
+  }
+  .button-part2 p {
+    display: block !important;
+    position: static !important;
+    transform: none;
+    width: 100%;
+  }
+  .button-part1 h2, .button-part2 h2, .button-part3 h2 {
+    display: block !important;
+    position: static !important;
+    transform: none;
+  }
+
+  #newImage1, #newImage2, #newImage3 {
+    height: auto !important;
+  }
+
+  .about-part {
+    display: block !important;
+  }
+  .about-part2 p {
+    width: 100% !important;
+    padding-right: 60px;
+  }
+  .about-part1 p {
+    width: 100% !important;
+    padding-right: 60px;
+  }
+  #about-button {
+    margin: 20px auto !important;
+  }
+  #service-button {
+    margin: 20px auto !important;
+  }
+  #shop-button {
+    margin: 20px auto !important;
+  }
+
+  .services {
+    display: block !important;
+  }
+  .service1, .service2 {
+    width: 100% !important;
+  }
+
+  #book input {
+    width: 80% !important;
+  }
+
+  #book h2 {
+    padding-top: 20px !important;
+  }
+
+  #service h2 {
+    background-color: #1D1917;
+  }
+}
+@media (max-width: 767px) {
+  #service h2 {
+    /* Leave room for the mobile menu button above the title. */
+    padding-top: 72px;
+  }
+}
+
+/* A separate two-column color layer for the services page. */
+@media (min-width: 1100px) {
+
+  .service-background {
+    display: none;
+    position: fixed;
+    inset: 0;
+    grid-template-columns: 1fr 1fr;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .service-background > :first-child { background-color: #1D1917 }
+  .service-background > :last-child { background-color: #1D1917 }
+
+  body.service-page .service-background { display: grid; }
+  body.service-page > header,
+  body.service-page > .page,
+  body.service-page > footer {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+
+/* Tablets: desktopopmaak waar die past. Een groot iPad in liggende stand
+   gebruikt dezelfde regels via de touch-query; desktop blijft ongewijzigd. */
+@media (min-width: 768px) and (max-width: 1100px),
+       (min-width: 1101px) and (max-width: 1440px) and (pointer: coarse) and (hover: none) {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  header nav { gap: clamp(16px, 4vw, 70px); flex-wrap: nowrap; }
+  nav button { font-size: clamp(22px, 2.5vw, 28px); white-space: nowrap; }
+
+  /* Zelfde foto, overlay, hoogte, cover en positie als de desktophero. */
+  .hero { height: 800px; background-position: 0% 0%; }
+  .hero h1 {
+    width: 75%;
+    margin: 0;
+    padding: 50px 0 0;
+    font-size: clamp(50px, 5.5vw, 75px);
+  }
+  .hero p {
+    width: 55%;
+    margin: 50px 0 0 clamp(32px, 7vw, 100px);
+  }
+  .hero #button1, .hero #button2 {
+    display: block;
+    width: auto;
+    max-width: calc(100% - 64px);
+    margin-left: clamp(32px, 7vw, 100px);
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .option-part {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    height: auto;
+    min-height: 600px;
+    padding-inline: 24px;
+    padding-bottom: 50px;
+    align-items: start;
+  }
+  .image-part1, .image-part2, .image-part3,
+  .button-part1, .button-part2, .button-part3 { grid-row: 1; min-width: 0; }
+  .option-part img { width: 100%; height: 500px; }
+  .option-part h2 { font-size: clamp(36px, 4.1vw, 50px); }
+  .button-part2 h2, .button-part2 p, .button-part2 button {
+    position: static;
+    transform: none;
+  }
+  .button-part1 p, .button-part2 p, .button-part3 p {
+    width: 90%;
+    margin-inline: auto;
+    font-size: 20px;
+  }
+  .button-part2 button { margin-top: 65px; }
+  .button-part2 button:hover { transform: scale(1.05); }
+  .option-part button { max-width: 100%; }
+
+  .about-part {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 32px;
+    padding-inline: 24px;
+  }
+  .about-part1, .about-part2 { min-width: 0; }
+  .about-part h3 { font-size: clamp(28px, 3vw, 35px); }
+  #about-image { width: 100%; max-width: 400px; height: auto; aspect-ratio: 1; }
+  .about-part1 p, .about-part2 p { width: 90%; padding: 0; margin-inline: auto; }
+
+  .services { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .service1, .service2 { min-width: 0; padding-inline: 24px; }
+  .services h3 { font-size: clamp(28px, 3vw, 35px); }
+  #service-image { width: 100%; max-width: 500px; height: auto; aspect-ratio: 1; }
+  #service button { max-width: 100%; }
+
+  /* Dezelfde twee achtergrondkleuren als de desktopdienstenpagina. */
+  .service-background {
+    display: none;
+    position: fixed;
+    inset: 0;
+    grid-template-columns: 1fr 1fr;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .service-background > :first-child { background-color: #292320; }
+  .service-background > :last-child { background-color: #4A3D35; }
+  body.service-page .service-background { display: grid; }
+  body.service-page > header,
+  body.service-page > .page,
+  body.service-page > footer { position: relative; z-index: 1; }
+
+  footer { padding-inline: 24px; }
+}
+
+/* Onder 400px blijft de mobiele stijl leidend, met ruimte voor alle inhoud.
+   De bestaande weergave van 400–767px verandert niet. */
+@media (max-width: 399.98px) {
+  .page { overflow-wrap: anywhere; }
+  .page > h2 { padding-inline: 16px; }
+  #about > h2, #book > h2 { margin-top: 0; padding-top: 72px !important; }
+  h2 { font-size: clamp(28px, 10vw, 40px); }
+  h3 { font-size: clamp(24px, 8vw, 32px); }
+
+  .hero h1 {
+    width: auto !important;
+    margin: 0 16px;
+    padding: 80px 0 0;
+    font-size: clamp(28px, 10vw, 40px);
+  }
+  .hero p { width: auto; margin: 28px 20px 0; }
+  .hero #button1, .hero #button2 {
+    display: block;
+    width: calc(100% - 32px) !important;
+    margin: 36px 16px 0;
+    padding: 8px 0;
+  }
+  .hero #button2 { margin-top: 16px; }
+
+  .option-part { padding-inline: 16px; padding-bottom: 24px; }
+  .button-part1 p, .button-part2 p, .button-part3 p {
+    width: 100%;
+    padding: 0;
+    margin-inline: auto;
+  }
+  .option-part img { width: 100%; height: auto; aspect-ratio: 7 / 5; }
+  .option-part button { white-space: normal; }
+  .about-part { padding-inline: 16px; }
+  .about-part1 p, .about-part2 p { padding: 0; }
+  #about-image { width: 100%; height: auto; aspect-ratio: 1; }
+  .service1, .service2 { padding-inline: 16px; }
+  #service-image { width: 100%; height: auto; aspect-ratio: 1; }
+  .book-part { padding-inline: 16px; }
+  #book input { width: 100% !important; min-width: 0; }
+  #service-select, #book-button { width: 100%; min-width: 0; }
+  #service-select { font-size: clamp(16px, 5vw, 20px); }
+  footer { padding-inline: 16px; overflow-wrap: anywhere; }
+
+  .page > #newMenuButton { right: 16px !important; z-index: 3; }
+  .page > nav {
+    width: min(240px, calc(100% - 32px)) !important;
+    right: 16px !important;
+    z-index: 4;
+    padding: 8px;
+  }
+  .page > nav:not([hidden]) { display: flex; flex-direction: column; }
+  .page > nav button {
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 22px !important;
+    text-align: left;
+    white-space: normal;
+  }
+}
