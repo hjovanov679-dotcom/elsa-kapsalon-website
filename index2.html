@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bestelpagina</title>
+  <link rel="stylesheet" href="style2.css">
+  <script src="script2.js" defer></script>
+</head>
+<body>
+  <div id="grid">
+  <div id="product-info">
+    <h2></h2>
+    <div id="productFoto">
+    </div>
+  <div id="productGrid">
+    <div class="grid1">
+    <p>Naam product:</p>
+    </div>
+    <div class="grid2">
+    <p><span id = 'productName'></span></p>
+    </div>
+    <div class = 'grid1'>
+    <p>Beschrijving product:</p>
+    </div>
+    <div class='grid2'>
+    <p><span id='product-description'></span></p>
+    </div>
+    <div class='grid1'>
+    <p>Prijs product:</p>
+    </div>
+    <div class='grid2'>
+    <p><span id = 'price'></span></p>
+    </div>
+  </div> <!-- Close productGrid -->
+  <p><span id = 'bezorging'>Bezorgd binnen 3 tot 5 werkdagen.</span></p>
+  <p><span id = 'message'>*Bij bestelling van uw product ontvangt u een bevestiging per e-mail. De link om te betalen vindt u in deze e-mail. Het product wordt pas na betaling verzonden.</span></p>
+  </div>
+  <div id ='input-data'>
+    <h1>Bestel uw gekozen product</h1>
+    <input type = 'text' id = 'customerName' placeholder='Uw naam'>
+    <input type = 'text' id = 'email' placeholder='Uw e-mail'>
+    <input type = 'text' id = 'adress' placeholder='Uw adress'>
+    <input type = 'text' id = 'postalCode' placeholder='Uw postcode'>
+    <input type = 'text' id = 'city' placeholder='Uw woonplaats'>
+    <input type = 'text' id = 'phoneNumber' placeholder='Uw telefoonnummer'>
+    <button id='submitOrder'>Bestel</button>
+    <p><span id = 'order-message'></span></p>
+  </div>
+  </div>
+</body>
+</html>
+

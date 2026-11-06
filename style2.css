@@ -1,0 +1,146 @@
+body {
+  background-color: #1D1917;
+  color: white;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: left;
+}
+
+#productFoto img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin-left: 60px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 20px;
+}
+
+#product-info {
+  grid-column: 1;
+  background-color: #4A3D35;
+}
+
+#product-info p {
+  margin-left: 10px;
+}
+#input-data {
+  grid-column: 2;
+}
+
+#productGrid {
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+
+.grid1 {
+  text-align: left;
+  grid-column: 1;
+}
+
+.grid2 {
+  text-align: left;
+  grid-column: 2;
+}
+
+#input-data input {
+  display: block;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+}
+
+#input-data button {
+  display: block;
+  color: white;
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  background-color: #5f4e44;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+#input-data button:hover {
+  background-color: #7a6658;
+}
+
+#message, #bezorging {
+    color: rgb(175, 175, 175);
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  #grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  #product-info,
+  #input-data {
+    grid-column: 1;
+    min-width: 0;
+    padding: 24px 20px;
+  }
+
+  #product-info p {
+    margin-left: 0;
+  }
+
+  #productFoto img {
+    display: block;
+    width: min(100%, 300px);
+    height: auto;
+    aspect-ratio: 1;
+    margin: 0 auto;
+  }
+
+  #productGrid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .grid1,
+  .grid2 {
+    grid-column: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .grid1 p {
+    margin-bottom: 4px;
+  }
+
+  .grid2 p {
+    margin-top: 0;
+  }
+
+  #input-data h1 {
+    font-size: clamp(28px, 7vw, 40px);
+    line-height: 1.15;
+    margin-top: 0;
+  }
+
+  #input-data input,
+  #input-data button {
+    min-height: 48px;
+  }
+}
