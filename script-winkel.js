@@ -16,7 +16,7 @@ buyButton1.addEventListener('click', function() {
     id: 1
   }
   sessionStorage.setItem('product', JSON.stringify(product));
-  window.location.href = 'bestelpagina/index2.html';
+  window.location.href = 'index2.html';
 });
 
 buyButton2.addEventListener('click', function() {
@@ -28,7 +28,7 @@ buyButton2.addEventListener('click', function() {
     id: 2
   }
   sessionStorage.setItem('product', JSON.stringify(product));
-  window.location.href = 'bestelpagina/index2.html';
+  window.location.href = 'index2.html';
 });
 
 buyButton3.addEventListener('click', function() {
@@ -40,7 +40,7 @@ buyButton3.addEventListener('click', function() {
     id: 3
   }
   sessionStorage.setItem('product', JSON.stringify(product));
-  window.location.href = 'bestelpagina/index2.html';
+  window.location.href = 'index2.html';
 });
 
 buyButton4.addEventListener('click', function() {
@@ -52,7 +52,7 @@ buyButton4.addEventListener('click', function() {
     id: 4
   }
   sessionStorage.setItem('product', JSON.stringify(product));
-  window.location.href = 'bestelpagina/index2.html';
+  window.location.href = 'index2.html';
 });
 
 buyButton5.addEventListener('click', function() {
@@ -64,7 +64,7 @@ buyButton5.addEventListener('click', function() {
     id: 5
   }
   sessionStorage.setItem('product', JSON.stringify(product));
-  window.location.href = 'bestelpagina/index2.html';
+  window.location.href = 'index2.html';
 });
 
 buyButton6.addEventListener('click', function() {
@@ -76,5 +76,5 @@ buyButton6.addEventListener('click', function() {
     id: 6
   }
   sessionStorage.setItem('product', JSON.stringify(product));
-  window.location.href = 'bestelpagina/index2.html';
+  window.location.href = 'index2.html';
 });
