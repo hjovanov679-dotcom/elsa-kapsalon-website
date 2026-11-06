@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elsa's Store</title>
+  <link rel="stylesheet" href="style-winkel.css">
+  <script src="script-winkel.js" defer></script>
+</head>
+<body class="store-page">
+  <a class="store-skip-link" href="#collectie">Ga naar de producten</a>
+
+  <!-- HEADER: vervang [Winkelnaam]. Pas de teruglink aan bij een apart domein. -->
+  <header class="store-header">
+    <div class="store-shell store-header-inner">
+      <a class="store-brand" href="index.html">Elsa's Store</a>
+      <nav class="store-navigation" aria-label="Winkelnavigatie">
+        <a href="#collectie">Collectie</a>
+        <a href="../index.html">Terug naar kapsalon</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- INTRODUCTIE: schrijf hier later je eigen titel en introductie. -->
+    <section class="store-intro store-shell" aria-labelledby="store-title">
+      <div>
+        <p class="store-eyebrow">Elsa's Kapsalon / Winkel</p>
+        <h1 id="store-title">Elsa's Store</h1>
+      </div>
+      <div class="store-intro-copy">
+        <p>Ons luxe assortiment van haarverzorgingsproducten. Wij gebruiken uitsluitend gezonde ingrediënten in onze producten. Kwaliteit staat bij ons voorop!</p>
+        <a class="store-text-link" href="#collectie">Bekijk de collectie</a>
+      </div>
+    </section>
+
+    <!-- CATALOGUS: categorieën zijn gewone ankerlinks, geen JavaScript-filters. -->
+
+      <div class="store-catalog-content">
+        <section class="store-category" id="categorie-01" aria-labelledby="categorie-01-title">
+          <div class="store-product-grid">
+            <!-- Vervang de voorbeeldproducten hieronder door je eigen producten. Voeg hier later een productlink of koopknop toe. -->
+            <article class="store-product" id="product-01" aria-labelledby="product-01-title">
+              <div class="store-product-image"><span><img src="images/shampoo.png" alt="Elsa's Shampoo" loading="lazy"></span></div>
+              <div class="store-product-info">
+                <p class="store-product-brand">Elsa's products</p>
+                <h3 id="product-01-title">Elsa's Shampoo</h3>
+                <p class="store-product-description">Elsa's luxe shampoo voor zorgvuldige haarverzorging.</p>
+                <div class="store-product-meta"><span>250 ml</span><span class="store-price">€16,95</span></div>
+                <button id="buy-button1">Bestel</button>
+              </div>
+            </article>
+
+            <article class="store-product" id="product-02" aria-labelledby="product-02-title">
+              <div class="store-product-image"><span><img src="images/gezichstcreme.png" alt="Elsa's Creme" loading="lazy"></span></div>
+              <div class="store-product-info">
+                <p class="store-product-brand">Elsa's products</p>
+                <h3 id="product-02-title">Elsa's Creme</h3>
+                <p class="store-product-description">Een luxe gezichtscreme. Gezond voor huid en haar.</p>
+                <div class="store-product-meta"><span>50 ml</span><span class="store-price">€19,95</span></div>
+                <button id="buy-button2">Bestel</button>
+              </div>
+            </article>
+
+            <article class="store-product" id="product-03" aria-labelledby="product-03-title">
+              <div class="store-product-image"><span><img src="images/stylinggel.png" alt="Elsa's Styling Gel" loading="lazy"></span></div>
+              <div class="store-product-info">
+                <p class="store-product-brand">Elsa's products</p>
+                <h3 id="product-03-title">Elsa's Styling Gel</h3>
+                <p class="store-product-description">Een krachtige styling gel voor langdurige hold.</p>
+                <div class="store-product-meta"><span>100 ml</span><span class="store-price">€15,95</span></div>
+                <button id="buy-button3">Bestel</button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="store-category" id="categorie-02" aria-labelledby="categorie-02-title">
+          <div class="store-product-grid">
+            <article class="store-product" id="product-04" aria-labelledby="product-04-title">
+              <div class="store-product-image"><span><img src="images/haarolie.png" alt="Haarolie"></span></div>
+              <div class="store-product-info">
+                <p class="store-product-brand">Elsa's products</p>
+                <h3 id="product-04-title">Elsa's Haarolie</h3>
+                <p class="store-product-description">Voedt en versterkt het haar met natuurlijke oliën.</p>
+                <div class="store-product-meta"><span>50 ml</span><span class="store-price">€14,95</span></div>
+                <button id="buy-button4">Bestel</button>
+              </div>
+            </article>
+
+            <article class="store-product" id="product-05" aria-labelledby="product-05-title">
+              <div class="store-product-image"><span><img src="images/baardolie.png" alt="Baardolie"></span></div>
+              <div class="store-product-info">
+                <p class="store-product-brand">Elsa's products</p>
+                <h3 id="product-05-title">Elsa's Baardolie</h3>
+                <p class="store-product-description">Elsa's luxe baardolie voor zorgvuldige baardverzorging.</p>
+                <div class="store-product-meta"><span>250 ml</span><span class="store-price">€16,95</span></div>
+                <button id="buy-button5">Bestel</button>
+              </div>
+            </article>
+
+            <article class="store-product" id="product-06" aria-labelledby="product-06-title">
+              <div class="store-product-image"><span><img src="images/haarlak.png" alt="Haarlak"></span></div>
+              <div class="store-product-info">
+                <p class="store-product-brand">Elsa's products</p>
+                <h3 id="product-06-title">Elsa's Haarlak</h3>
+                <p class="store-product-description">Elsa's luxe haarlak voor goed verzorgd haar.</p>
+                <div class="store-product-meta"><span>250 ml</span><span class="store-price">€17,95</span></div>
+                <button id="buy-button6">Bestel</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER: plaats hier later je eigen winkel- en contactinformatie. -->
+  <footer class="store-footer">
+    <div class="store-shell store-footer-inner">
+      <div><p class="store-brand">Elsa's Store</p><p>Een luxe winkel voor haarverzorging.</p></div>
+      <div><h2>Contact</h2><p>contact@elsasstore.nl</p><p>0638244055</p></div>
+      <a class="store-text-link" href="../index.html">Terug naar kapsalon</a>
+    </div>
+  </footer>
+</body>
+</html>

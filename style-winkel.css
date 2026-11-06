@@ -1,0 +1,261 @@
+/* WINKELTEMPLATE — pas de kleuren hier aan.
+   De .store- prefix houdt alle stijlen los van de bestaande kapsalonwebsite.
+   Deze CSS wordt ook gebruikt voor de drie productplekken op de Shop-pagina. */
+.store-page,
+.store-preview {
+  --store-bg: #1d1917;
+  --store-surface: #292320;
+  --store-surface-alt: #4a3d35;
+  --store-taupe: #a58f7c;
+  --store-gold: #c8ad7f;
+  --store-text: #ffffff;
+  --store-muted: #d8c9b8;
+  --store-line: #635247;
+  color: var(--store-text);
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.store-page,
+.store-page *,
+.store-preview,
+.store-preview * {
+  box-sizing: border-box;
+}
+
+.store-page { margin: 0; background: var(--store-bg); }
+.store-page h1, .store-page h2, .store-page h3,
+.store-preview h2, .store-preview h3 {
+  margin: 0;
+  color: var(--store-text);
+  line-height: 1.15;
+  font-weight: 400;
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+.store-page p, .store-preview p { margin: 0; }
+.store-page a, .store-preview a { color: inherit; }
+.store-page a:focus-visible, .store-preview a:focus-visible {
+  outline: 2px solid var(--store-gold);
+  outline-offset: 5px;
+}
+.store-page img, .store-preview img { display: block; max-width: 100%; }
+.store-shell { width: min(1280px, calc(100% - 96px)); margin-inline: auto; }
+
+/* HEADER EN INTRODUCTIE */
+.store-header { background: var(--store-taupe); }
+.store-header-inner {
+  min-height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-block: 20px;
+}
+.store-brand {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 30px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.store-navigation { display: flex; flex-wrap: wrap; gap: 16px 32px; }
+.store-navigation a { text-underline-offset: 6px; text-decoration: none; padding-block: 8px; }
+.store-navigation a:hover { text-decoration: underline; }
+.store-header a:focus-visible { outline-color: var(--store-bg); }
+.store-intro {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: end;
+  gap: 48px;
+  padding-block: 68px 58px;
+  border-bottom: 1px solid var(--store-line);
+}
+.store-eyebrow {
+  color: var(--store-gold);
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.store-intro h1 {
+  font-size: clamp(40px, 5.2vw, 76px);
+  margin-top: 18px;
+  letter-spacing: -0.035em;
+}
+.store-intro-copy { max-width: 430px; padding-bottom: 4px; }
+.store-intro-copy p { color: var(--store-muted); font-size: 18px; margin-bottom: 28px; }
+.store-text-link { text-underline-offset: 6px; text-decoration-thickness: 1px; }
+.store-text-link:hover { color: var(--store-gold); }
+
+/* CATALOGUS: links categorieën, rechts de productkaarten. */
+.store-catalog {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  align-items: start;
+  gap: 48px;
+  padding-block: 54px 80px;
+  scroll-margin-top: 24px;
+}
+.store-sidebar h2 { font-size: 27px; margin-top: 10px; }
+.store-categories { display: grid; margin-top: 26px; }
+.store-categories a {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-block: 15px;
+  border-top: 1px solid var(--store-line);
+  text-decoration: none;
+}
+
+.store-categories a:last-child { border-bottom: 1px solid var(--store-line); }
+.store-categories a:hover { color: var(--store-gold); }
+.store-categories a > :last-child { font-size: 14px; color: var(--store-muted); }
+.store-category { scroll-margin-top: 24px; }
+.store-category + .store-category { margin-top: 64px; }
+.store-section-heading { margin-bottom: 28px; }
+.store-section-heading h2 { font-size: clamp(30px, 3vw, 40px); margin-top: 8px; }
+.store-section-heading > p { color: var(--store-muted); margin-top: 14px; }
+.store-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px;margin-left: 20px; margin-right: 20px; margin-top: 20px;}
+.store-product { min-width: 0; scroll-margin-top: 24px; display: flex; flex-direction: column; }
+
+#buy-button1, #buy-button2, #buy-button3, #buy-button4, #buy-button5, #buy-button6 {
+  background-color: #A58F7C;
+  font-size: 20px;
+  padding: 10px 18px;
+  border: 2px solid black;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/* AFBEELDING: het vlak blijft vierkant; echte afbeeldingen passen er later in. */
+.store-product-image {
+  aspect-ratio: 1;
+  background: var(--store-surface);
+  display: grid;
+  object-fit: cover;
+  place-items: center;
+  position: relative;
+  color: var(--store-muted);
+  border: 1px solid var(--store-line);
+}
+.store-product:nth-child(even) .store-product-image { background: var(--store-surface-alt); }
+.store-product-image > span {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  inset: 16px;
+  border: 1px dashed var(--store-line);
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+}
+.store-product-image img { width: 100%; height: 100%; object-fit: cover; }
+.store-product-info { display: flex; flex-direction: column; flex: 1; padding-block: 20px; }
+.store-product-brand { color: var(--store-muted); font-size: 14px; }
+.store-product h3 { font-size: 25px; margin-top: 8px; line-height: 1.3; }
+.store-product .store-product-description { color: var(--store-muted); font-size: 16px; margin-block: 12px 24px; }
+.store-product-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 16px;
+  border-top: 1px solid var(--store-line);
+  padding-top: 15px;
+  margin-top: auto;
+  color: var(--store-muted);
+  font-size: 14px;
+}
+.store-price { color: var(--store-text); font-size: 20px; }
+
+/* FOOTER */
+.store-footer { background: #000; border-top: 1px solid var(--store-line); }
+.store-footer-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr auto;
+  gap: 32px;
+  align-items: start;
+  padding-block: 48px;
+}
+.store-footer h2 { font-size: 24px; margin-bottom: 14px; }
+.store-footer p { color: var(--store-muted); }
+.store-footer .store-brand { color: var(--store-text); margin-bottom: 14px; }
+.store-skip-link { position: absolute; left: 24px; top: -100px; }
+.store-skip-link:focus { top: 12px; z-index: 10; padding: 12px 18px; background: var(--store-bg); }
+.store-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* DE SHOP-PAGINA OP DE KAPSALONSITE: dezelfde kaarten, eigen afbakening. */
+.store-preview { padding-block: 64px 80px; }
+.store-preview-intro { max-width: 740px; margin-bottom: 40px; }
+.store-preview h2 { font-size: clamp(36px, 4.5vw, 56px); margin-block: 12px 20px; }
+.store-preview-intro > p:not(.store-eyebrow) { color: var(--store-muted); font-size: 18px; }
+.store-preview-intro .store-button { margin-top: 28px; }
+.store-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 22px;
+  border: 1px solid var(--store-gold);
+  background: var(--store-surface);
+  color: var(--store-text);
+  text-decoration: none;
+  min-height: 48px;
+  border-radius: 2px;
+}
+.store-button:hover { background: var(--store-surface-alt); }
+.store-preview .store-product .store-text-link { align-self: flex-start; margin-top: 20px; }
+
+/* TABLET EN MOBIEL: van drie naar twee en één kolom, zonder vaste hoogtes. */
+@media (max-width: 1100px) {
+  .store-catalog { grid-template-columns: 150px minmax(0, 1fr); gap: 28px; }
+  .store-catalog .store-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  .store-shell { width: calc(100% - 40px); }
+  .store-header-inner { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .store-brand { font-size: 28px; }
+  .store-navigation { gap: 12px 24px; }
+  .store-intro { grid-template-columns: 1fr; gap: 28px; padding-block: 40px; }
+  .store-intro-copy { max-width: none; }
+  .store-intro-copy p { font-size: 16px; }
+  .store-catalog { grid-template-columns: 1fr; gap: 36px; padding-block: 36px 56px; }
+  .store-categories { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+  .store-categories a { border-bottom: 1px solid var(--store-line); }
+  .store-category + .store-category { margin-top: 44px; }
+  .store-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 18px; }
+  .store-footer-inner { grid-template-columns: 1fr 1fr; }
+  .store-footer-inner > a { grid-column: 1 / -1; }
+  /* De bestaande kapsalonsite plaatst haar mobiele menuknop op 20px. */
+  .store-preview { padding-top: 96px; padding-bottom: 56px; }
+}
+@media (max-width: 520px) {
+  .store-product-grid, .store-catalog .store-product-grid { grid-template-columns: 1fr; }
+  .store-product-image > span { inset: 20px; }
+  .store-footer-inner { grid-template-columns: 1fr; }
+}
+
+
+/* Smalle tablets: productkaarten krijgen de bestaande tweekolomsstijl.
+   Vanaf 900px blijft de desktopindeling met drie kaarten behouden. */
+@media (min-width: 768px) and (max-width: 899.98px) {
+  .store-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Alleen de uitzonderlijk smalle mobiele breedtes aanpassen. */
+@media (max-width: 399.98px) {
+  .store-shell { width: calc(100% - 32px); }
+  .store-product-grid { margin-inline: 0; }
+  .store-page .store-product-grid { margin-inline: 16px; }
+  .store-product-image > span { inset: 12px; padding: 12px; }
+  .store-button { max-width: 100%; white-space: normal; }
+}
