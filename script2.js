@@ -45,7 +45,7 @@ submitOrderButton.addEventListener('click', async function() {
             city: cityInput.value,
             phoneNumber: phoneNumberInput.value
             };
-        const response = await fetch('../../api/bestellingen.php', {
+        const response = await fetch('bestellingen.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -61,7 +61,7 @@ submitOrderButton.addEventListener('click', async function() {
             orderMessageSpan.textContent = 'Er is een fout opgetreden bij het plaatsen van de bestelling.';
         }
     };
-    const emailResponse = await fetch('../../api/email.php', {
+    const emailResponse = await fetch('email.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
