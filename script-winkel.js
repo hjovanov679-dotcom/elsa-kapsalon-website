@@ -56,7 +56,7 @@ buyButton4.addEventListener('click', function() {
 });
 
 buyButton5.addEventListener('click', function() {
-  let product = {
+  const product = {
     name: "Elsa's Baardolie",
     price: '€16.95',
     image: 'images/baardolie.png',
@@ -68,7 +68,7 @@ buyButton5.addEventListener('click', function() {
 });
 
 buyButton6.addEventListener('click', function() {
-  let product = {
+  const product = {
     name: "Elsa's Haarlak",
     price: '€17.95',
     image: 'images/haarlak.png',
