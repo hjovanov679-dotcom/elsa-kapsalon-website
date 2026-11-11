@@ -40,6 +40,8 @@ function enableMobileLayout() {
     menuContent.style.top = '65px'
     menuContent.style.setProperty('width', '50%', 'important')
     menuContent.style.right = '0'
+    document.getElementById('button1').innerHTML = 'Boek nu je afspraak'
+    document.getElementById('button2').innerHTML = 'Bekijk onze diensten'
     let hiddenMenu = true
     let done = false
     if (done === false) {
