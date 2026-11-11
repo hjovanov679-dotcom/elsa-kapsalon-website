@@ -1,9 +1,9 @@
 <?php
 
-require_once __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/includes/email.php';
 
-$data = json_decode(file_get_contents('php://input'), true, 512, THROW_ON_ERROR);
+$data = json_decode(file_get_contents('php://input'), true, 512, JSON_THROW_ON_ERROR);
 $name = $data['name'] ?? '';
 $email = $data['email'] ?? '';
 $adress = $data['adress'] ?? '';
