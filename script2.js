@@ -76,4 +76,4 @@ submitOrderButton.addEventListener('click', async function() {
             orderMessageSpan.textContent = 'Er is een fout opgetreden bij het verzenden van de e-mail. Stuur alstublieft een e-mail naar support@elsas-kapsalon.nl met uw bestelgegevens. Dan helpen wij u verder.';
         }
     };
-};
+});
