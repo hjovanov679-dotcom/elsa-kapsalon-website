@@ -13,7 +13,8 @@ function updateProduct(product) {
     const img = document.createElement('img');
     img.src = '../' + product.image;
     img.alt = product.name;
-    productFoto.replaceChildren(img);}
+    productFoto.replaceChildren(img);
+}
 
 if (product) {
     updateProduct(product);
