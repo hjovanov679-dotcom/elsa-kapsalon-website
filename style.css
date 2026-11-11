@@ -511,6 +511,13 @@ footer {
     /* Leave room for the mobile menu button above the title. */
     padding-top: 72px;
   }
+  .page > nav:not([hidden]) { display: flex; flex-direction: column; }
+  .page > nav button {
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 22px !important;
+    text-align: left;
+    white-space: normal;
 }
 
 /* A separate two-column color layer for the services page. */
@@ -679,13 +686,5 @@ footer {
     right: 16px !important;
     z-index: 4;
     padding: 8px;
-  }
-  .page > nav:not([hidden]) { display: flex; flex-direction: column; }
-  .page > nav button {
-    width: 100%;
-    padding: 12px 8px;
-    font-size: 22px !important;
-    text-align: left;
-    white-space: normal;
   }
 }
