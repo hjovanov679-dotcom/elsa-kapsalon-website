@@ -7,10 +7,10 @@ $postalCode = $data['postalCode'] ?? '';
 $city = $data['city'] ?? '';
 $phoneNumber = $data['phoneNumber'] ?? '';
 
-$host = '127.0.0.1';
-$dbname = 'barbershop';
-$username = 'root';
-$password = 'NieuwWachtwoord123!';
+$host = getenv('DB_HOST');
+$dbname = getenv('DB_NAME');
+$username = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
 
 $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
 try {
