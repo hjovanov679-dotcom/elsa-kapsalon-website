@@ -37,13 +37,13 @@ function sendEmail($name, $email, $adress, $city, $productName) {
         header('Content-Type: application/json');
         echo json_encode(['success' => true]);
     } catch (\Exception $e) {
-        error_log($e->getMessage());
         http_response_code(500);
         header('Content-Type: application/json');
         echo json_encode([
             'success' => false,
             'error' => 'De e-mail kon niet worden verstuurd.'
-       ]);
+        ]);
+        exit;
     }
 }
 
