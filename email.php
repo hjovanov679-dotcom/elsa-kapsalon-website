@@ -37,9 +37,13 @@ function sendEmail($name, $email, $adress, $city, $productName) {
         header('Content-Type: application/json');
         echo json_encode(['success' => true]);
     } catch (\Exception $e) {
-        throw new RuntimeException('Er is een fout opgetreden bij het verzenden van de email: ' . $e->getMessage());
+        error_log($e->getMessage());
+        http_response_code(500);
         header('Content-Type: application/json');
-        echo json_encode(['success' => false, 'error' => $e->getMessage()]);
+        echo json_encode([
+            'success' => false,
+            'error' => 'De e-mail kon niet worden verstuurd.'
+       ]);
     }
 }
 
