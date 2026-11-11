@@ -13,7 +13,7 @@ $username = getenv('DB_USERNAME');
 $password = getenv('DB_PASSWORD');
 $port = getenv('DB_PORT');
 
-$dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
+$dsn = "mysql:host=$host;port=$port;dbname=$dbname";
 try {
     $pdo = new PDO($dsn, $username, $password);
 } catch (PDOException $e) {
