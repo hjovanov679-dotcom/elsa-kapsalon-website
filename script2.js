@@ -44,7 +44,7 @@ submitOrderButton.addEventListener('click', async function() {
             postalCode: postalCodeInput.value,
             city: cityInput.value,
             phoneNumber: phoneNumberInput.value
-            };
+        };
         const response = await fetch('bestellingen.php', {
             method: 'POST',
             headers: {
