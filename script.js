@@ -56,7 +56,6 @@ function enableMobileLayout() {
     listelement1.style.border = 'none'
     listelement1.style.fontSize = '25px'
     listelement1.style.paddingLeft = '8px'
-    listelement1.style.paddingRight = '8px'
     menuContent.appendChild(listelement1)
 
     const listelement2 = document.createElement('button')
@@ -65,7 +64,6 @@ function enableMobileLayout() {
     listelement2.style.border = 'none'
     listelement2.style.fontSize = '25px'
     listelement2.style.paddingLeft = '8px'
-    listelement2.style.paddingRight = '8px'
     menuContent.appendChild(listelement2)
 
     const listelement3 = document.createElement('button')
@@ -74,7 +72,6 @@ function enableMobileLayout() {
     listelement3.style.border = 'none'
     listelement3.style.fontSize = '25px'
     listelement3.style.paddingLeft = '8px'
-    listelement3.style.paddingRight = '8px'
     menuContent.appendChild(listelement3)
 
     const listelement4 = document.createElement('button')
@@ -83,7 +80,6 @@ function enableMobileLayout() {
     listelement4.style.border = 'none'
     listelement4.style.fontSize = '25px'
     listelement4.style.paddingLeft = '8px'
-    listelement4.style.paddingRight = '8px'
     menuContent.appendChild(listelement4)
 
     const listelement5 = document.createElement('button')
@@ -92,7 +88,6 @@ function enableMobileLayout() {
     listelement5.style.border = 'none'
     listelement5.style.fontSize = '25px'
     listelement5.style.paddingLeft = '8px'
-    listelement5.style.paddingRight = '8px'
     menuContent.appendChild(listelement5)
     function showMenu() {
       menuContent.hidden = !menuContent.hidden
