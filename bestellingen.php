@@ -19,7 +19,7 @@ try {
 } catch (PDOException $e) {
     echo 'Connection failed: ' . $e->getMessage();
     header('Content-Type: application/json');
-    $send_data = ["success => false];
+    $send_data = ["success" => false];
     echo json_encode($send_data);
 }
 
