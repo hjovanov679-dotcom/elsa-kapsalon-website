@@ -522,8 +522,8 @@ footer {
     font-size: 22px !important;
     text-align: left;
     white-space: normal;
+  }
 }
-
 /* A separate two-column color layer for the services page. */
 @media (min-width: 1100px) {
 
