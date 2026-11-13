@@ -17,7 +17,6 @@ $dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
 try {
     $pdo = new PDO($dsn, $username, $password);
 } catch (PDOException $e) {
-    echo 'Connection failed: ' . $e->getMessage();
     header('Content-Type: application/json');
     $send_data = ["success" => false];
     echo json_encode($send_data);
