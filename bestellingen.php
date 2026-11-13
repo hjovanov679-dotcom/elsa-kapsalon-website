@@ -20,6 +20,7 @@ try {
     header('Content-Type: application/json');
     $send_data = ["success" => false];
     echo json_encode($send_data);
+    exit;
 }
 
 $productId = $data['product']['id'];
