@@ -192,3 +192,5 @@ async function sendEmailBooking() {
     bookingMessage.textContent = 'Er is een fout opgetreden: ' + (result.error || 'Onbekende fout');
   }
 }
+
+document.getElementById('book-button').addEventListener('click', sendEmailBooking())
