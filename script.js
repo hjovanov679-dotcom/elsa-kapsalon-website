@@ -166,3 +166,29 @@ function handleServiceButton(serviceId) {
   showPage('book')
   serviceSelect.value = serviceId
 }
+
+async function sendEmailBooking() {
+  const php_Object = {
+    name: nameInput.value,
+    phone: phoneInput.value,
+    email: emailInput.value,
+    date: dateInput.value,
+    time: timeInput.value,
+    service: serviceInput.value
+  }
+  const sendData = JSON.stringify(php_Object);
+  const emailBookingResponse = await fetch('email_bookings.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: sendData
+  })
+  const result = await emailBookingResponse.json();
+  const bookingMessage = document.getElementById('booking-message');
+  if (result.success) {
+    bookingMessage.textContent = 'Afspraak succesvol geboekt!';
+  } else {
+    bookingMessage.textContent = 'Er is een fout opgetreden: ' + (result.error || 'Onbekende fout');
+  }
+}
